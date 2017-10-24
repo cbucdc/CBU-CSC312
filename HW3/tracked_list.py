@@ -1,7 +1,9 @@
 import random
 
+class Access():
+    pass
 
-class Get:
+class Get(Access):
 
     def __init__(self, index):
         self.index = index
@@ -10,7 +12,7 @@ class Get:
         return "Get({})".format(self.index)
 
 
-class Swap:
+class Swap(Access):
 
     def __init__(self, i, j):
         self.i = i
